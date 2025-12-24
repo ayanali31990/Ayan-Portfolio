@@ -33,7 +33,9 @@ export default function Hero() {
             View Projects
           </button>
           <button className="border border-gray-700 hover:border-red-500 px-6 py-3 rounded-lg transition text-white">
-            Contact Me
+            <a href={`#contact`} className="hover:text-red-500 transition">
+              Contact Me
+            </a>
           </button>
         </div>
       </div>
