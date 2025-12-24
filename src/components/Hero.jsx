@@ -3,7 +3,10 @@ import matrixBg from "../assets/matrix.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen bg-black flex items-center justify-center overflow-hidden"
+    >
       {/* 🧩 Matrix Background */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-[0.10]"
@@ -30,7 +33,12 @@ export default function Hero() {
 
         <div className="mt-8 flex justify-center gap-4">
           <button className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg transition text-white">
-            View Projects
+            <a
+              href={`#projects`}
+              className="transition hover:text-black transition-all"
+            >
+              View Projects
+            </a>
           </button>
           <button className="border border-gray-700 hover:border-red-500 px-6 py-3 rounded-lg transition text-white">
             <a href={`#contact`} className="hover:text-red-500 transition">

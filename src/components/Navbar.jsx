@@ -12,7 +12,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-[100] bg-black/70 backdrop-blur-md px-10 py-4 flex justify-between items-center">
       {/* Logo */}
-      <h1 className="text-red-500 text-xl font-bold">AA</h1>
+      <h1 className="text-red-500 text-xl font-bold">
+        <a
+          href={`#hero`}
+          className="hover:bg-red-700 p-2 hover:text-white rounded-2xl transition"
+        >
+          AA
+        </a>
+      </h1>
 
       {/* Nav Links */}
       <ul className="hidden md:flex gap-8 text-gray-300">
